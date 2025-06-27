@@ -1,0 +1,25 @@
+#include <iostream>
+
+ struct ownerinfo { ... };
+ struct ContactInfo { ... };
+ ownerinfo owner;
+ ContactInfo contacts[100];
+ int contactnumber = 0;
+
+void inputownerinfo() {
+	std::cout << "소유자이름: "; 
+	std::cin >> owner.name;
+
+	std::cout << "소유자 전화번호: ";
+	std::cin >> owner.phonenumber; 
+
+	std::cout << "소유자 이메일: "; 
+	std::cin >> owner.email;
+
+	std::cout << "소유자 주소: "; 
+	std::cin >> owner.address; 
+	std::cout << "소유자 트위터 계정: "; 
+	std::cin >> owner.twitterAcount;
+
+	std::cout << "입력이 완료되었습니다." << std::endl;
+}
